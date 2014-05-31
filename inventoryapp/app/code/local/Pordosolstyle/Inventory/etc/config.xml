@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Pordosolstyle_Inventory>
+            <version>1.0.3</version>
+        </Pordosolstyle_Inventory>
+    </modules>
+
+    <admin>
+        <routers>
+			<inventory>
+				<use>admin</use>
+				<args>
+					<module>Pordosolstyle_Inventory</module>
+					<frontName>inventory</frontName>
+				</args>
+			</inventory>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<inventory module="inventory">
+				<title>Inventory1</title>
+				<sort_order>72</sort_order>               
+				<action>../inventory</action>
+				<children>
+				
+				</children>
+			</inventory>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Pordosolstyle_Inventory>
+							<title>Inventory Module</title>
+							<sort_order>11</sort_order>
+						</Pordosolstyle_Inventory>
+						<system>
+							<children>
+								<config>
+									<children>
+										<inventory translate="title" module="inventory"> 
+											<title>Inventory Settings</title>
+											<sort_order>50</sort_order>
+										</inventory>
+									</children>							
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	
+    </adminhtml>   
+    
+
+    <global>
+        <helpers>
+            <inventory>
+                <class>Pordosolstyle_Inventory_Helper</class>
+            </inventory>
+        </helpers>
+    </global>
+		
+</config>
