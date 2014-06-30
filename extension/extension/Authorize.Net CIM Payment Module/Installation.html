@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Authorize.Net CIM for Magento</title>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<style type='text/css'>
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; } 
+table {	border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%;	font-weight:normal; color: #000; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+address{ display: inline; }
+
+body {
+	background: #fff;
+	color: #333;
+	font: 0.85em/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	position: relative;
+	-webkit-text-stroke: 1px transparent;
+	text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px;
+}
+
+a {
+	color: #FE7500;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+div#wrapper {
+	margin: 50px auto;
+	width: 850px;
+}
+
+h1 {
+	letter-spacing: -0.025em;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-left: -10px;
+}
+
+h3 {
+	font-weight: bold;
+	margin: 27px 0 7px;
+	border-bottom: 1px solid #000;
+	letter-spacing: 0.5px;
+}
+
+h4 {
+	font-size: 18px;
+	color: black;
+	margin: 20px 0 5px;
+	border-bottom: 1px solid #bbb;
+}
+
+.box {
+	border-top: 2px solid #000;
+	padding: 20px 20px;
+	clear: both;
+}
+
+.box.info {
+	background-color: #528f6c;
+	color: white;
+}
+
+.box.info a {
+	color: white;
+}
+
+.box.info h3 {
+	color: white;
+}
+
+dd, dt {
+	float: left;
+}
+
+dd {
+	font-weight: bold;
+	width: 20%;
+	clear: left;
+}
+
+dt {
+	width: 70%;
+}
+
+.clear {
+	clear: both;
+}
+
+.padding_p p {
+	margin-bottom: 10px;
+}
+
+.footer {
+	position: relative;
+	float: right;
+	top:-45px;
+}
+
+table.table {
+	border: none;
+	width: 80%;
+	margin: 5px 10% 0;
+}
+
+	table.table tr.header {
+		font-weight: bold;
+		background-color: #b6c7db;
+		font-size: 0.9em !important;
+		color: #1d3652;
+	}
+
+		table.table tr.header td {
+			font-size: 1em !important;
+			text-align: center;
+		}
+		
+		table.table td {
+			font-size: 0.8em;
+			padding: 3px;
+		}
+		
+.row1, .row1 td {
+	background-color: #fafbfc; /* Very light blue */
+}
+
+	.row1 .altrow, .row1.altrow {
+		background-color: #eef3f8; /* Slightly darker than row1 */
+	}
+	
+.row2, .row2 td {
+	background-color: #f1f4f7; /* Light blue */
+}
+
+	.row2 .altrow, .row2.altrow {
+		background-color: #e4ebf2; /* Slightly darker than row2 */
+	}
+	
+div.edit {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+div.inner h3 {
+	font-size: 1.3em;
+}
+
+div.inner h4 {
+	font-size: 1.1em;
+	margin: 0;
+	border: 0;
+}
+
+div.edit div.inner {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	text-align: center;
+}
+
+pre.prettyprint { margin-top: 10px; margin-bottom: 10px; text-align:left; padding: 5px; background: #f8f8f8; border: 1px solid #c9c9c9; overflow: auto; margin-left: 10px; font-size: 11px; line-height: 140%; }
+
+.copyright {
+	text-align: right;
+	color: #333;
+	font-size: 0.88em;
+}
+
+.center {
+	text-align: center;
+}
+		</style>
+	</head>
+	
+	<body>
+		<div id='wrapper'>
+			<a href="http://www.paradoxlabs.com" target="_blank"><img src="http://store.paradoxlabs.com/skin/frontend/paradox/default/images/logo.png" alt="ParadoxLabs" style="float:right;border:0;" /></a>
+			<h1>Authorize.Net CIM for Magento</h1>
+			<div class='box' style="border: 0; padding: 0 20px 20px">
+				<dl>
+					<dd>Type</dd>
+					<dt>Payment Module</dt>
+					<dd>Version</dd>
+					<dt>1.4.0</dt>
+					<dd>Compatibility</dd>
+					<dt>Magento Community Edition 1.4 - 1.8<br />Magento Enterprise Edition 1.9 - 1.13</dt>
+				</dl>
+				<br class='clear' />
+			</div>
+			<div class='box padding_p'>
+				<h2>Description</h2>
+				<img src="screenshot.png" alt="Screenshot" style="float:right;border:1px solid #bbb;margin-left:10px" />
+				<p>Authorize.Net's <a href="http://www.authorize.net/solutions/merchantsolutions/merchantservices/cim/" target="_blank">Customer Information Manager (CIM)</a> is a service that allows you to store customer payment information on Authorize.Net's secure servers. This gives you all the convenience of stored credit cards, with all the safety of Authorize.Net.</p>
+				<h3>Full-featured</h3>
+					<p>This module supports all standard payment actions in Magento (including authorize, authorize and capture, partial invoice, refund, partial refund, void, AVS address validation, CVV validation). It also allows customers to save their payment info for future use. This gives your returning customers the convenience of stored credit cards and rapid checkout, while maintaining PCI compliance.</p>
+					<p>When a customer first checks out, they are given a form to enter credit card details. If they choose to save the card, next time they check out they can reuse that card with a single click. Your users can also view, add, edit, and delete any of their stored payment info through a "Manage My Cards" interface in their account. All frontend features are also available in the Magento Admin Panel.</p>
+					<p>This edition of the payment module does not support Magento's <a href="http://www.magentocommerce.com/knowledge-base/entry/working-with-recurring-profiles/" target="_blank">Recurring Profiles</a>. If you would like to use recurring profiles with Authorize.Net, please consider <a href="https://store.paradoxlabs.com/magento-authorize-net-cim-payment-module-recurring-profiles.html">Authorize.Net CIM with Recurring Profiles</a>.</p>
+				<h3>Convenient</h3>
+					<p>Stored payment info is good for your business.</p>
+					<ul style='list-style:inside;'><li>It simplifies checkout.</li>
+					<li>It encourages your customers to keep coming back.</li>
+					<li>It lets your customer service staff quickly process orders and billing changes, without asking customers for credit card info.</li>
+					<li>It streamlines order management and integration (for compatible systems).</li></ul>
+				<h3>Trusted</h3>
+					<p>This is an <a href="http://www.authorize.net/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/?type=csstcart" target="_blank">Authorize.Net Certified Solution</a>.</p>
+					<p class="center"><img src="http://store.paradoxlabs.com/media/wysiwyg/AuthorizeNetCertified.gif" width="140" height="50" border="0" alt="Authorize.Net Certified Solution" /></p>
+					<p>Our payment modules are used on hundreds of Magento installations, and our reviews speak for themselves.</p>
+					<h3>Secure</h3>
+					<p>All communication with Authorize.Net is done using SSL encryption, and no credit card data is ever stored on your own server. A process called tokenization is used to run transactions with stored payment information, allowing your customers to pay with a 'saved' card that is not stored on your server at all.</p>
+				<h3>Flexible</h3>
+					<p>Our extensions are 100% unencoded, with well-documented code written by our team of Magento Certified Developers. When you purchase this extension, you get full control to view and modify it as you see fit within the terms of the license.</p>
+					<p>This module supports many third-party extensions, including XTENTO's Magento Order Export Module.</p>
+				<h3>Supported</h3>
+					<p>We pride ourselves on quality support, which includes free bug fixes and updates for the lifetime of this extension.</p>
+					<p>Our staff are all located in the United States, with offices in Pennsylvania and Colorado, open weekdays from 8 AM to 5 PM EST. Have a question? Give us a call at <a href="tel:17174313330">717-431-3330</a>, or email us at <a href="mailto:magento@paradoxlabs.com">magento@paradoxlabs.com</a>.</p>
+				<div style="clear:both"></div>
+			</div>
+			<div class='box padding_p'>
+				<h2>Terms of Use</h2>
+				<p>Find the license agreement online at <a href="http://store.paradoxlabs.com/license.html" target="_blank">store.paradoxlabs.com/license.html</a>.</p>
+			</div>
+			<div class='box padding_p'>
+				<h2>Installation</h2>
+				
+				<h3>Step 1: Files to Upload</h3>
+				<p>Upload all files within the <strong>upload</strong> folder into the root directory of Magento.
+
+				<table class='table'>
+					<tr class='header'>
+						<td align='center' width='48%'>Folder in Download</td>
+						<td width='4%'>&nbsp;</td>
+						<td align='center' width='48%'>Folder on Server</td>
+					</tr>
+					<tr class='row2'>
+						<td width='48%'>/upload/app/</td>
+						<td align='center' width='4%'>&rarr;</td>
+						<td width='48%'>/app/</td>
+					</tr>
+				</table>
+
+				<h3>Step 2: Refresh the Cache</h3>
+				<p>To complete the installation process, open the Admin Panel and go to <b>System > Cache Management</b>. Click the <b>Flush Magento Cache</b> button at the top-right and wait for the page to finish loading.</p>
+				<p>If you have Magento's compilation enabled, you also need to recompile. Go to <b>System > Tools > Compilation</b> and click <b>Run Compilation Process</b> at the top-right to do this.</p>
+
+				<h3>Step 3: Configure the Payment Module</h3>
+				<p><b style="color:#b00">Before proceeding: Sign up for an <a href="https://ems.authorize.net/oap/home.aspx?SalesRepID=98&amp;ResellerID=24716" target="_blank">Authorize.Net merchant account</a> if you have not done so, and ensure your account has Customer Information Manager (CIM) enabled.</b></p>
+				<p>Open your Admin Panel and go to <b>System > Configuration > Payment Methods</b>. If the extension was uploaded correctly, you will see a new setting section on this page titled <b>Authorize.Net CIM</b>. Enter your <b>API Login ID</b> and <b>Transaction Key</b> as found in your Authorize.Net account, and complete the rest of the settings. Once you're done, click <b>Save Config</b> to save the changes.</p>
+
+				<h3>Step 4: Enable Logs</h3>
+				<p>If logs are enabled in Magento, this extension will record any errors in the event that something goes wrong.</p>
+				<p>To set up logging, in FTP, go into the <b>var</b> folder in your Magento installation, and create a folder called <b>log</b> if it does not already exist. Be sure to set the folder permissions such that Magento can write to it. Once that's done, in the Admin Panel go to <b>System > Configuration > Developer > Log Settings</b>, enable logs, and save.</p>
+
+				<h3>Step 5: Profit!</h3>
+				<p>You're done! Test it out, and let us know if you have any problems.</p>
+			</div>
+			<div class='box'>
+				<h2>Need Help?</h2>
+				<p><b>Support System: <a href="http://support.paradoxlabs.com">support.paradoxlabs.com</a></b></p>
+				<p style="padding-top:10px;">If you have a problem, email <a href="mailto:magento@paradoxlabs.com">magento@paradoxlabs.com</a>, or contact us by phone at 717-431-3330.</p>
+				<div style="clear:both"></div>
+			</div>
+			<div class='copyright'>
+				© 2013 <a href='http://www.paradoxlabs.com'>ParadoxLabs</a>
+			</div>
+		</div>
+	</body>
+</html>
