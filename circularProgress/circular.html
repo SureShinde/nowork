@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+  padding: 30px 0;
+  background-color: #2f3439;
+  font-family: "Noto Sans", sans-serif; }
+
+.wrap {
+  width: 600px;
+  margin: 0 auto; }
+
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.progress-radial {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #2f3439;
+  background-color: #ff6347; }
+
+/* -------------------------------------
+ * Optional centered circle w/text
+ * ------------------------------------- */
+.progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fffde8;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px; }
+
+
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+  
+<div class="progress-radial">
+  <div class="overlay"></div>
+</div>
+  
+</div>
+    <script>
+        jQuery(document).ready(function () {
+        var step = 1;
+        var loops = Math.round(100/parseInt(step));
+        var increment = 360 / parseInt(loops);
+        var half = Math.round(parseInt(loops)/parseInt(2));
+        var barColor = "#ff6347";
+        var overlayColor = "#fffde8";
+        var backColor= "#2f3439";
+         
+        for(var i = 0; i<= loops; i++ ) {
+         alert(1)
+        if(i != 0)
+        {
+            var j = parseInt(i) - parseInt(1);
+            jQuery(".progress-radial").removeClass("progress-"+j);
+        }
+        if(i < half) {
+             var nextdegString = parseInt(90) + ( increment * i )
+             var nextdeg = nextdegString+"deg";
+               jQuery(".progress-radial").addClass("progress-"+i);
+               jQuery(".progress-"+i).css("background-image","linear-gradient(90deg, "+backColor+" 50%, transparent 50%, transparent), linear-gradient("+nextdeg+", "+barColor+" 50%, "+backColor+" 50%, "+backColor+")");
+               jQuery(".progress-radial .overlay").html(i+"%"); 
+             console.log(nextdeg)
+        }
+        else {
+            console.log("below half"); 
+             var nextdegString = -90 + ( increment * (i - half))
+             var nextdeg = nextdegString+"deg";
+             console.log(nextdeg)
+             jQuery(".progress-radial").addClass("progress-"+i);
+            jQuery(".progress-"+i).css("background-image","linear-gradient("+nextdeg+", "+barColor+" 50%, transparent 50%, transparent), linear-gradient(270deg, "+barColor+" 50%, "+backColor+" 50%, "+backColor+")");
+            jQuery(".progress-radial .overlay").html(i+"%"); 
+        }
+        }
+        });
+ 
+    </script>
+</body>
+</html>
