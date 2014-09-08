@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link type="text/css" media="screen" href="dist/bttrlazyloading.css" rel="stylesheet">
+<script type="text/javascript" src="dist/jquery.bttrlazyloading.js"></script>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.main {
+	width: 500px;
+	margin: 0 auto;
+}
+.slide {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid red;
+	display: none;
+	position: absolute;
+	width: 500px
+}
+.playerList ul{margin:0px; padding:0px; line-height:none;}
+.playerList li{
+	display:inline;
+	float:left;
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+  <ul>
+    <li><a href="#" class="nav" rel="slide1">Test 1</a></li>
+    <li><a href="#" class="nav" rel="slide2" id="slide22">Test 2</a></li>
+    <li><a href="#" class="nav" rel="slide3">Test 3</a></li>
+  </ul>
+  <div style="position:relative; height:400px;">
+    <div class="slide" id="slide1" style="display:block">
+      <div class="playerList">
+        <ul>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/01.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/02.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/03.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/04.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/06.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/07.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/08.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/09.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/10.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/11.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/01.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/02.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/03.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/04.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/06.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/07.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/08.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/09.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/10.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/11.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="slide" id="slide2">
+      <div class="playerList">
+        <ul>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/02.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/01.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/03.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/04.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/06.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/07.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/08.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/09.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/10.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/11.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/01.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/02.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/03.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/04.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/06.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/07.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/08.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/09.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/10.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/11.png" alt="" /></a></div>
+          </li>
+          <li>
+            <div class="listPic"><a href="#" title=""><img class="bttrlazyloading animated" data-bttrlazyloading-sm-src="images/playerList/05.png" alt="" /></a></div>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="slide" id="slide3">Slide 3 </div>
+  </div>
+</div>
+<style>
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    transform: scale(.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.3);
+    -ms-transform: scale(.3);
+    transform: scale(.3);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+</style>
+<script>
+$(document).ready(function(){
+	$('a.nav').click(function(){
+		$('.slide').fadeOut();
+		var slideCont = $(this).attr('rel');
+		$('#'+slideCont).stop().fadeIn();
+		
+	});
+	
+$('.bttrlazyloading').bttrlazyloading();
+	
+
+});
+$(document).delegate("#slide22","click",function() { 
+   
+
+  })
+</script>
+</body>
+</html>
