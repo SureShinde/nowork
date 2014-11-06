@@ -94,17 +94,17 @@ td { vertical-align: top;}
 	bottom: 15px;
 }
 #nav-dock {
-	width:250px;
-	position: fixed;
-	left: 0;
-	top: 0;
-	padding: 20px 0 0 0;
+ left: 0;
+    padding: 10px 0 0;
+    position: fixed;
+    top: 0;
+    width: 250px;
 }
 #nav-dock a {
 	display: block;
 	background: url(img/devider.gif) left top repeat-x;
 	color: #626363;
-	padding: 2px 0 0 0;
+	padding: 0px 0 0 0;
 	margin: 0 0 0 0;
 	position: relative;
 	text-align:right;
@@ -134,7 +134,7 @@ td { vertical-align: top;}
     background: url("img/logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     display: block;
     height: 173px;
-    margin: 0 0 20px 38px;
+    margin: 0 0 0 38px;
     padding: 0;
     text-indent: 9999em;
 }

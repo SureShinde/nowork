@@ -1,6 +1,6 @@
 $(window).load(function() {
 	$("#nav-dock a").hover(function () {
-			$(this).find('span').animate({backgroundColor: 'rgba(189, 94, 94, 1)', color: '#fff', paddingRight: '30px'}, {queue:false, duration:250 });
+			$(this).find('span').animate({backgroundColor: 'rgb(71,220,204)', color: '#fff', paddingRight: '30px'}, {queue:false, duration:250 });
 			$(this).find('div.sym').animate({top: '12px'}, {queue:false, duration:250 });
 		},
 		function () {

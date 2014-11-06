@@ -6,9 +6,10 @@
 	<link rel="stylesheet" media="all" href="css/bootstrap.css" />
 	<link rel="stylesheet" media="all" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="js/highlighter/jquery.snippet.min.css" />
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
-	<script type="text/javascript" src="js/jquery.animate-colors-min.js"></script>
+	<script type="text/javascript" src="js/jquery.animate-colors.js"></script>
 	<script type="text/javascript" src="js/highlighter/jquery.snippet.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -78,7 +79,7 @@
 				</a>
 				<a href="#installation" class="scrolltoanchor">
 					<div class="sym">&sect;</div>
-					<span>Template Installation</span>
+					<span>How to install?</span>
 				</a>
 				<a href="#general_options" class="scrolltoanchor">
 					<div class="sym">&sect;</div>
@@ -161,7 +162,7 @@
 					<li><strong>CSS3</strong></li>
 					<li><strong>Carty FONT</strong></li>
 					<li><strong>Font Awesome</strong></li>
-					<li><strong>One Click Install</strong></li>
+					<li><strong>Click to Install</strong></li>
 					<li><strong>Customizable Blocks</strong></li>
 					<li><strong>iOS slider (worth of $20. Integrated for seamless touch controll on mobile and tablet.)</strong></li>
 					<li><strong>Parallax Slider</strong></li>
@@ -181,30 +182,29 @@
 					<li><strong>CSS3 Loaders(all new)</strong></li>
 					<li><strong>Best seller Products Slider</strong></li>
 					<li><strong>Sticky Header</strong></li>
-					<li><strong>Sticky Header</strong></li>
 					<li><strong>Product zoom</strong></li>
 				</ol>
 			</div>
 			<div id="package" class="post first">
 				<h2 class="section-title">What's In?</h2><br /><br />
-				This package is organized as follows:<br />
-				<strong>/Changes</strong> - contains .diff files where we describe all changes we have altered in code. All these changes must be implemented by yourself. Please refer to <a href="#customization">customization</a> chapter of this guide to learn how to customize this theme in the correct way which allows you implement further updates with ease<br />
-				<strong>/Licensing</strong> - contains license files<br />
-				<strong>/Sources</strong><br />
-				<strong>-- demo images</strong> - contains media folder which must be uploaded to the root directory of your magento only if you use our "One Click Installation" feature<br />
-				<strong>-- Extensions</strong> - contains files for the 3-rd party extensions that are included in theme package<br />
-				<strong>-- psd</strong> - contains layered .psd files<br />
+				This package is divided in following distribution:<br />
+				<strong>/Licence</strong> - includes licence files<br />
+				<strong>/Theme sources</strong><br />
+				<strong>-- demo images</strong> - includes media folder which should be uploaded to the root folder of the magento. It is only needed when you are using only "Click to install" feature.
+				
+				contains media folder which must be uploaded to the root directory of your magento only if you use our "One Click Installation" feature<br />
+				<strong>-- Extensions</strong> - contains all 3rd party extensions.<br />
+				<strong>-- psd</strong> - contains structured layered .psd files<br />
 				<strong>-- Static Content</strong> - contains static content used on the demo of the theme<br />
 				<strong>-- -- Blocks</strong> - contains static blocks<br />
 				<strong>-- -- Pages</strong> - contains content of pages<br />
 				<strong>/Theme Files</strong> - contains theme files + patches (if required) for different versions of magento<br />
-				<strong>/User Guide</strong> - you are reading it at the moment<br />
-				<strong>/Online FAQ.url</strong> - click it twice to open our online FAQ in your browser<br />
+				<strong>/User Guide</strong> - right now you are here<br />
 				<strong>/Read it first!.txt</strong> - Must be read even before this guide<br />
 			</div>
 			<div id="installation" class="post">
-				<h2 class="section-title">Template Installation</h2><br /><br />
-				<div class="note">We strongly recommend you to install the theme on a test store first and only then move it to the live store</div>
+				<h2 class="section-title">How to install the theme?</h2><br /><br />
+				<div class="note">Please do not install theme on live store direcly. First, intall the theme on development environment then move it to the Production.</div>
 				<h3 id="prepare-magento" class="sub-title">Prepare your magento</h3>
 				<h4>1. Refresh and Disable all the Magento cache</h4>
 				<p>When configuring your store, whatever theme or anything else you should <strong>refresh all the Magento cache</strong> and then completely <strong>disable it</strong>. To get it done go to <em class="dfn-code">System -> Cache Management</em></p>
