@@ -7,3 +7,5 @@ jQuery(document).delegate("#tab2","click",function() {
 	 JQuery("YOUR_CONTAINER_ID_OR_CLASS").find("TAG_OR_CLASS_ON_WHICH_YOU_WANT_TO_APPLY_LAZYLOAD").lazyLoadXT();
 
 })
+
+alert(1);
